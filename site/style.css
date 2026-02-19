@@ -1,0 +1,46 @@
+:root {
+    --background-color: white;
+}
+
+body, html {
+    background: var(--background-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: unset;
+}
+
+nav {
+    background: linear-gradient(180deg, #220f63 22%, #30257d 80%);
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    margin: auto;
+    border-radius:75px;
+    width: 75%;
+    height: 62.5px;
+    top: 15px;
+    transition: top 2s ease-in-out;
+}
+
+nav.scroll-up, nav:focus-within {
+  top: 15px;
+}
+
+nav.scroll-down {
+    top: -100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
